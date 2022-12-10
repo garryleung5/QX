@@ -19,7 +19,7 @@
 [rewrite_local]
   
 # ～ 如期 解锁会员权限（2022-12-10）@ddgksf2013
-^https:\/\/www\.freshhome\.top\/ url script-response-body RuQiProCrack.js
+^https:\/\/www\.freshhome\.top\/ url script-response-body https://github.com/garryleung5/QX/raw/main/Rewrite/UnlockVip/RuQiProCrack.js
 
 [mitm] 
 

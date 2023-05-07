@@ -5,7 +5,7 @@
 > 脚本作者：ddgksf2013
 > 微信账号：墨鱼手记
 > 解锁说明：解锁高级会员权限
-> 更新时间：2023-05-05
+> 更新时间：2023-05-07
 > 通知频道：https://t.me/ddgksf2021
 > 贡献投稿：https://t.me/ddgksf2013_bot
 > 问题反馈：ddgksf2013@163.com
@@ -17,7 +17,7 @@
           
 [rewrite_local]
   
-# > focos☆解锁会员权限（2023-05-07）@ddgksf2013
+# > focos☆解锁会员权限（2023-05-05）@ddgksf2013
 ^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify\/apple) url script-response-body https://raw.githubusercontent.com/garryleung5/QX/main/Rewrite/UnlockVip/focos.vip.js 
 
 

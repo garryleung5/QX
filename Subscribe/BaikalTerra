@@ -4,7 +4,10 @@ proxies:
     server: 195.133.52.148
     port: 65432
     uuid: 315293dc-2d7c-4679-e2ab-32f63b503ea8
+    alterId: 0
+    cipher: auto
     udp: true
+    flow: xtls-rprx-vision
     tls: true
     servername: apple.com
     network: tcp

@@ -1,3 +1,5 @@
+    fallback: ['https://doh-pure.onedns.net/dns-query', 'https://ada.openbld.net/dns-query', 'https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
   - { name: '俄罗斯 01', type: vless, server: 195.133.52.148, port: 45032, uuid: 315293dc-2d7c-4679-e2ab-32f63b503ea8, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, servername: apple.com, network: tcp, reality-opts: { public-key: i3GMpvq1XtdjQXJaNu3PlhmN-JhdbOMgVsTJLfkw6GY, short-id: 2fb6ae51 }, client-fingerprint: chrome }
   - { name: '俄罗斯 02', type: vless, server: 195.133.52.148, port: 13707, uuid: 39659c78-c916-46ce-f3aa-5ef5ac52da08, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, servername: apple.com, network: tcp, reality-opts: { public-key: 2CSVuW4quBgfPkNuMVy9TEzIeIyT71UD7Y3ZyyfHwQk, short-id: 6719a6da }, client-fingerprint: firefox }

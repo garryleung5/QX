@@ -14,10 +14,10 @@ proxies:
     client-fingerprint: chrome
 
 proxy-groups:
-  - name: "俄罗斯分流"  
+  - name: "俄罗斯"  
     type: select
     proxies:
-      - "JustHost"
+      - "俄罗斯 01"
       - DIRECT
 
 rules:

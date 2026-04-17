@@ -2,7 +2,7 @@ proxies:
   - name: "俄罗斯 01"
     type: vless
     server: 195.133.52.148
-    port: 65432
+    port: 45032
     uuid: 315293dc-2d7c-4679-e2ab-32f63b503ea8
     alterId: 0
     cipher: auto

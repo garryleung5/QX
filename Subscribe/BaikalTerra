@@ -3,13 +3,10 @@ proxies:
   - { name: "俄罗斯 02", type: vless, server: 195.133.52.148, port: 13707, uuid: 39659c78-c916-46ce-f3aa-5ef5ac52da08, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, servername: apple.com, network: tcp, reality-opts: { public-key: 2CSVuW4quBgfPkNuMVy9TEzIeIyT71UD7Y3ZyyfHwQk, short-id: 6719a6da }, client-fingerprint: firefox }
   - { name: "俄罗斯 03", type: vless, server: 195.133.52.148, port: 37371, uuid: ab8d87a0-a818-4cd5-b63d-ed156c7a4727, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, servername: apple.com, network: tcp, reality-opts: { public-key: --gRqqh2jwUn1FG2NA2DlrN8x2ptaSaBkFTTk-0o3Ak, short-id: a59d6d57 }, client-fingerprint: edge }
 proxy-groups:
-  - name: "俄罗斯"  
-    type: select
-    proxies:
-      - "俄罗斯 01"
-      - "俄罗斯 02"
-      - "俄罗斯 03"
-      - DIRECT
+  - { name: Proxy, type: select, proxies: [自动选择, 故障转移, '俄罗斯 01', '俄罗斯 02', '俄罗斯 03' ] }
+  - { name: 去广告, type: select, proxies: [REJECT, Proxy, '俄罗斯 01', '俄罗斯 02', '俄罗斯 03' ], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+  - { name: 自动选择, type: url-test, proxies: ['俄罗斯 01', '俄罗斯 02', '俄罗斯 03' ], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+  - { name: 故障转移, type: fallback, proxies: ['俄罗斯 01', '俄罗斯 02', '俄罗斯 03' ], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 
 rules:
   - DOMAIN-SUFFIX,rdz.ru,俄罗斯

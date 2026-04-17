@@ -33,7 +33,7 @@ rules:
   - DOMAIN-SUFFIX,wildberries.ru,俄罗斯
   - DOMAIN-SUFFIX,rutube.ru,俄罗斯
   - DOMAIN-SUFFIX,avito.ru,俄罗斯
-  - DOMAIN-SUFFIX,ok.ru,俄罗斯分流
+  - DOMAIN-SUFFIX,ok.ru,俄罗斯
   - DOMAIN-SUFFIX,gosuslugi.ru,俄罗斯
   - DOMAIN-SUFFIX,vkvideo.ru,俄罗斯
   - DOMAIN-SUFFIX,kinopoisk.ru,俄罗斯

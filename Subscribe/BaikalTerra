@@ -71,6 +71,7 @@ rules:
   - DOMAIN-SUFFIX,ivi.ru,俄罗斯
   - DOMAIN-SUFFIX,mariinsky.ru,俄罗斯
   - DOMAIN-SUFFIX,hermitagemuseum.org,俄罗斯
+  - DOMAIN-SUFFIX,https://bolshoi.ru,俄罗斯
   - DOMAIN-SUFFIX,рф,俄罗斯
   - DOMAIN-KEYWORD,yandex,俄罗斯
   - GEOIP,RU,俄罗斯

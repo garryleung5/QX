@@ -7,7 +7,7 @@ proxy-groups:
   - { name: 去广告, type: select, proxies: [REJECT, Proxy, '俄罗斯 01', '俄罗斯 02', '俄罗斯 03' ], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
   - { name: 自动选择, type: url-test, proxies: ['俄罗斯 01', '俄罗斯 02', '俄罗斯 03' ], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
   - { name: 故障转移, type: fallback, proxies: ['俄罗斯 01', '俄罗斯 02', '俄罗斯 03' ], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
-  - DIRECT
+  
 rules:
   - DOMAIN-SUFFIX,rdz.ru,俄罗斯
   - DOMAIN-SUFFIX,vk.ru,俄罗斯

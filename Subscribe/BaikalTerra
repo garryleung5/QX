@@ -17,7 +17,7 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
   - { name: '俄罗斯 01', type: vless, server: 195.133.53.110, port: 28605, uuid: 62dfb214-0013-4527-82ee-717cf3c57f50, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, servername: apple.com, network: tcp, reality-opts: { public-key: p5setSh4Fv9TFg5GxMcCOMTxGLIu-H4RF2nFwJ3UChQ, short-id: 188e2152 }, client-fingerprint: chrome }
-  - { name: '俄罗斯 02', type: vless, server: 195.133.53.110, port: 59959, uuid: 40dbce0a-249f-441d-8462-bea970421cb5, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, servername: apple.com, network: tcp, reality-opts: { public-key: iL8F2fsbCrJRcA1A0XThrVp3dwAJf0kmNIFK3leyCn8, short-id: 0e088379 }, client-fingerprint: firefox }
+  - { name: '俄罗斯 02', type: vless, server: 195.133.53.110, port: 59959, uuid: 40dbce0a-249f-441d-8462-bea970421cb5, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, servername: apple.com, network: tcp, reality-opts: { public-key: HmtYQa3BazIxDnw5d_dc7RpIEWQcK8jdyKT6euURPkE, short-id: 0e088379 }, client-fingerprint: firefox }
   - { name: '俄罗斯 03', type: vless, server: 195.133.53.110, port: 37371, uuid: ab8d87a0-a818-4cd5-b63d-ed156c7a4727, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, servername: apple.com, network: tcp, reality-opts: { public-key: --gRqqh2jwUn1FG2NA2DlrN8x2ptaSaBkFTTk-0o3Ak, short-id: a59d6d57 }, client-fingerprint: edge }
 proxy-groups:
   - { name: 俄罗斯, type: select, proxies: [自动选择, 故障转移, '俄罗斯 01', '俄罗斯 02', '俄罗斯 03' ] }
